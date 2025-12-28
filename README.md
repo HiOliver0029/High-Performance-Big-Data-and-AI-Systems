@@ -31,3 +31,11 @@ This repository contains the coursework and assignments for the "High Performanc
     *   **Shared Memory:** Uses tiling to ensure coalesced global memory accesses.
     *   **Bank Conflict Avoidance:** Optimizes shared memory usage to minimize bank conflicts and maximize throughput.
     *   Performance profiling on NVIDIA GPUs (e.g., RTX 3090).
+
+## Research Reports
+
+### [Midterm: Deep Research Agent for Large Systems](HPC-Midterm%20Deep%20Research%20Agent%20for%20Large%20Systems.pdf)
+**Topic:** Deep Research Agent for Large Systems
+
+### [Final: Optimizing Distributed Large Model Inference](HPC_Final_Optimizing%20Distributed%20Large%20Model%20Inference.pdf)
+**Topic:** Optimizing Distributed Large Model Inference
