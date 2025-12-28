@@ -1,0 +1,224 @@
+Loaded: serial_performance_2025-09-22_15-10-03.csv, openmp_performance_2025-09-22_15-10-03.csv
+============================================================
+PERFORMANCE ANALYSIS REPORT
+============================================================
+
+Serial Performance Summary:
+                         count       mean  std        min        25%        50%        75%        max
+Matrix_Size Kernel_Size
+256         3              1.0     2674.1  NaN     2674.1     2674.1     2674.1     2674.1     2674.1
+            5              1.0     6850.5  NaN     6850.5     6850.5     6850.5     6850.5     6850.5
+            7              1.0    21684.8  NaN    21684.8    21684.8    21684.8    21684.8    21684.8
+            9              1.0    23638.9  NaN    23638.9    23638.9    23638.9    23638.9    23638.9
+512         3              1.0    10896.1  NaN    10896.1    10896.1    10896.1    10896.1    10896.1
+            5              1.0    40764.8  NaN    40764.8    40764.8    40764.8    40764.8    40764.8
+            7              1.0    75026.8  NaN    75026.8    75026.8    75026.8    75026.8    75026.8
+            9              1.0    95689.2  NaN    95689.2    95689.2    95689.2    95689.2    95689.2
+1024        3              1.0    50969.4  NaN    50969.4    50969.4    50969.4    50969.4    50969.4
+            5              1.0   119381.9  NaN   119381.9   119381.9   119381.9   119381.9   119381.9
+            7              1.0   301449.0  NaN   301449.0   301449.0   301449.0   301449.0   301449.0
+            9              1.0   358554.7  NaN   358554.7   358554.7   358554.7   358554.7   358554.7
+2048        3              1.0   235275.9  NaN   235275.9   235275.9   235275.9   235275.9   235275.9
+            5              1.0   529756.1  NaN   529756.1   529756.1   529756.1   529756.1   529756.1
+            7              1.0   899364.1  NaN   899364.1   899364.1   899364.1   899364.1   899364.1
+            9              1.0  1455349.8  NaN  1455349.8  1455349.8  1455349.8  1455349.8  1455349.8
+4096        3              1.0   754668.2  NaN   754668.2   754668.2   754668.2   754668.2   754668.2
+            5              1.0  2019950.1  NaN  2019950.1  2019950.1  2019950.1  2019950.1  2019950.1
+            7              1.0  4174755.5  NaN  4174755.5  4174755.5  4174755.5  4174755.5  4174755.5
+            9              1.0  6507727.7  NaN  6507727.7  6507727.7  6507727.7  6507727.7  6507727.7
+
+OpenMP Performance Summary:
+                     count         mean           std       min          25%         50%          75%         max
+Threads Matrix_Size
+1       256            4.0    17560.950  1.088719e+04    2850.9    12987.450    19751.30    24324.800     27890.3
+        512            4.0    68496.675  4.288677e+04   19776.2    46084.475    66010.95    88423.150    122188.6
+        1024           4.0   211409.375  1.507221e+05   73433.0   114158.975   178150.20   275400.600    415904.1
+        2048           4.0   790099.875  5.820620e+05  179976.5   442872.425   720195.00  1067422.450   1540033.0
+        4096           4.0  5802000.375  5.721273e+06  898038.0  1891326.900  4352947.60  8263621.075  13604068.3
+2       256            4.0     5543.400  3.919962e+03    1754.0     2961.050     4875.15     7457.500     10669.3
+        512            4.0    22690.700  1.887245e+04    5922.3    10286.250    18194.70    30599.150     48451.1
+        1024           4.0    85408.800  6.490525e+04   19503.0    40125.975    79156.10   124438.925    163820.0
+        2048           4.0   344115.050  2.523349e+05  101884.2   195618.825   293215.75   441711.975    688144.5
+        4096           4.0  1344934.250  1.028107e+06  324184.8   693041.625  1183164.05  1835056.675   2689224.1
+4       256            4.0     5185.675  3.775698e+03    1488.2     2742.275     4565.75     7009.150     10123.0
+        512            4.0    18394.300  1.349336e+04    4271.0     9990.125    16911.20    25315.375     35483.8
+        1024           4.0    66072.150  5.078486e+04   20212.5    33510.825    54280.50    86841.825    135515.1
+        2048           4.0   230378.800  1.792269e+05   56404.5   117162.075   198394.70   311611.425    468321.3
+        4096           4.0  1154096.475  1.061064e+06  283267.4   487379.825   837900.45  1504617.100   2657317.6
+8       256            4.0     7585.775  4.879555e+03    1857.8     4640.150     7759.40    10705.025     12966.5
+        512            4.0    16890.575  1.231134e+04    3532.4     9591.350    15854.30    23153.525     32321.3
+        1024           4.0    53802.700  4.481297e+04   11387.1    25774.050    44765.05    72793.700    114293.6
+        2048           4.0   217268.575  1.549510e+05   44822.6   113901.125   218253.85   321621.300    387744.0
+        4096           4.0   813287.275  5.907626e+05  178526.5   414408.775   788537.05  1187415.550   1497548.5
+16      256            4.0     5295.750  3.277838e+03    1869.3     3037.425     5074.95     7333.275      9163.8
+        512            4.0    21014.975  1.435577e+04    8654.3     8952.875    19292.25    31354.350     36821.1
+        1024           4.0    48596.950  3.427330e+04   14384.9    25675.925    43976.40    66897.425     92050.1
+        2048           4.0   185325.125  1.402323e+05   44830.9    91442.725   166999.90   260882.300    362469.8
+        4096           4.0   774998.425  5.959622e+05  183828.3   419992.350   672247.10  1027253.175   1571671.2
+32      256            4.0     6571.750  2.934778e+03    2969.5     5403.775     6600.60     7768.575     10116.3
+        512            4.0    16694.300  8.487502e+03    7373.5    10585.675    17454.95    23563.575     24493.8
+        1024           4.0    51186.925  3.458385e+04   14357.0    29036.000    48406.10    70557.025     93578.5
+        2048           4.0   182980.675  1.322176e+05   52800.0    97318.500   161972.50   247634.675    355177.7
+        4096           4.0   781252.300  5.548448e+05  175821.4   421855.300   756970.25  1116367.250   1435247.3
+
+Speedup Analysis:
+
+Matrix 256x256, Kernel 3x3:
+  1 threads: 1.00x speedup
+  2 threads: 1.63x speedup
+  4 threads: 1.92x speedup
+  8 threads: 1.53x speedup
+  16 threads: 1.53x speedup
+  32 threads: 0.96x speedup
+
+Matrix 256x256, Kernel 5x5:
+  1 threads: 1.00x speedup
+  2 threads: 4.87x speedup
+  4 threads: 5.18x speedup
+  8 threads: 2.94x speedup
+  16 threads: 4.78x speedup
+  32 threads: 2.63x speedup
+
+Matrix 256x256, Kernel 7x7:
+  1 threads: 1.00x speedup
+  2 threads: 4.37x speedup
+  4 threads: 4.67x speedup
+  8 threads: 2.80x speedup
+  16 threads: 4.15x speedup
+  32 threads: 2.76x speedup
+
+Matrix 256x256, Kernel 9x9:
+  1 threads: 1.00x speedup
+  2 threads: 2.17x speedup
+  4 threads: 2.29x speedup
+  8 threads: 1.78x speedup
+  16 threads: 2.52x speedup
+  32 threads: 3.31x speedup
+
+Matrix 512x512, Kernel 3x3:
+  1 threads: 1.00x speedup
+  2 threads: 3.34x speedup
+  4 threads: 4.63x speedup
+  8 threads: 5.60x speedup
+  16 threads: 2.29x speedup
+  32 threads: 2.68x speedup
+
+Matrix 512x512, Kernel 5x5:
+  1 threads: 1.00x speedup
+  2 threads: 4.67x speedup
+  4 threads: 4.61x speedup
+  8 threads: 4.72x speedup
+  16 threads: 6.06x speedup
+  32 threads: 4.71x speedup
+
+Matrix 512x512, Kernel 7x7:
+  1 threads: 1.00x speedup
+  2 threads: 3.13x speedup
+  4 threads: 3.52x speedup
+  8 threads: 3.84x speedup
+  16 threads: 2.10x speedup
+  32 threads: 3.32x speedup
+
+Matrix 512x512, Kernel 9x9:
+  1 threads: 1.00x speedup
+  2 threads: 2.52x speedup
+  4 threads: 3.44x speedup
+  8 threads: 3.78x speedup
+  16 threads: 4.14x speedup
+  32 threads: 4.99x speedup
+
+Matrix 1024x1024, Kernel 3x3:
+  1 threads: 1.00x speedup
+  2 threads: 3.77x speedup
+  4 threads: 3.63x speedup
+  8 threads: 6.45x speedup
+  16 threads: 5.10x speedup
+  32 threads: 5.11x speedup
+
+Matrix 1024x1024, Kernel 5x5:
+  1 threads: 1.00x speedup
+  2 threads: 2.72x speedup
+  4 threads: 3.37x speedup
+  8 threads: 4.18x speedup
+  16 threads: 4.34x speedup
+  32 threads: 3.76x speedup
+
+Matrix 1024x1024, Kernel 7x7:
+  1 threads: 1.00x speedup
+  2 threads: 2.05x speedup
+  4 threads: 3.24x speedup
+  8 threads: 3.88x speedup
+  16 threads: 3.91x speedup
+  32 threads: 3.63x speedup
+
+Matrix 1024x1024, Kernel 9x9:
+  1 threads: 1.00x speedup
+  2 threads: 2.54x speedup
+  4 threads: 3.07x speedup
+  8 threads: 3.64x speedup
+  16 threads: 4.52x speedup
+  32 threads: 4.44x speedup
+
+Matrix 2048x2048, Kernel 3x3:
+  1 threads: 1.00x speedup
+  2 threads: 1.77x speedup
+  4 threads: 3.19x speedup
+  8 threads: 4.02x speedup
+  16 threads: 4.01x speedup
+  32 threads: 3.41x speedup
+
+Matrix 2048x2048, Kernel 5x5:
+  1 threads: 1.00x speedup
+  2 threads: 2.34x speedup
+  4 threads: 3.86x speedup
+  8 threads: 3.87x speedup
+  16 threads: 4.96x speedup
+  32 threads: 4.73x speedup
+
+Matrix 2048x2048, Kernel 7x7:
+  1 threads: 1.00x speedup
+  2 threads: 2.53x speedup
+  4 threads: 3.51x speedup
+  8 threads: 3.04x speedup
+  16 threads: 4.01x speedup
+  32 threads: 4.30x speedup
+
+Matrix 2048x2048, Kernel 9x9:
+  1 threads: 1.00x speedup
+  2 threads: 2.24x speedup
+  4 threads: 3.29x speedup
+  8 threads: 3.97x speedup
+  16 threads: 4.25x speedup
+  32 threads: 4.34x speedup
+
+Matrix 4096x4096, Kernel 3x3:
+  1 threads: 1.00x speedup
+  2 threads: 2.77x speedup
+  4 threads: 3.17x speedup
+  8 threads: 5.03x speedup
+  16 threads: 4.89x speedup
+  32 threads: 5.11x speedup
+
+Matrix 4096x4096, Kernel 5x5:
+  1 threads: 1.00x speedup
+  2 threads: 2.72x speedup
+  4 threads: 4.00x speedup
+  8 threads: 4.51x speedup
+  16 threads: 4.46x speedup
+  32 threads: 4.41x speedup
+
+Matrix 4096x4096, Kernel 7x7:
+  1 threads: 1.00x speedup
+  2 threads: 8.77x speedup
+  4 threads: 12.14x speedup
+  8 threads: 12.55x speedup
+  16 threads: 16.08x speedup
+  32 threads: 13.47x speedup
+
+Matrix 4096x4096, Kernel 9x9:
+  1 threads: 1.00x speedup
+  2 threads: 2.41x speedup
+  4 threads: 2.44x speedup
+  8 threads: 4.33x speedup
+  16 threads: 4.13x speedup
+  32 threads: 4.52x speedup

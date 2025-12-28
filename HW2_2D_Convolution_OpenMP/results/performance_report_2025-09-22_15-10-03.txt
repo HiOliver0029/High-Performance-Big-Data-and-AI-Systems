@@ -1,0 +1,313 @@
+High Performance Computing HW2 - Convolution Performance Report 
+Generated on: 2025-09-22 15:10:03 
+================================================================ 
+ 
+System Information: 
+- OS: Windows 
+- Compiler: GCC 
+- OpenMP: Enabled 
+- Test Matrices: 256x256, 512x512, 1024x1024, 2048x2048, 4096x4096 
+- Kernel Sizes: 3x3, 5x5, 7x7, 9x9 
+- Thread Counts: 1, 2, 4, 8, 16, 32 
+ 
+SERIAL PERFORMANCE RESULTS 
+========================== 
+Testing Serial - Matrix: 256 x 256, Kernel: 3 x 3 
+  Result: 2674.100000 - PASS 
+Testing Serial - Matrix: 256 x 256, Kernel: 5 x 5 
+  Result: 6850.500000 - PASS 
+Testing Serial - Matrix: 256 x 256, Kernel: 7 x 7 
+  Result: 21684.800000 - PASS 
+Testing Serial - Matrix: 256 x 256, Kernel: 9 x 9 
+  Result: 23638.900000 - PASS 
+Testing Serial - Matrix: 512 x 512, Kernel: 3 x 3 
+  Result: 10896.100000 - PASS 
+Testing Serial - Matrix: 512 x 512, Kernel: 5 x 5 
+  Result: 40764.800000 - PASS 
+Testing Serial - Matrix: 512 x 512, Kernel: 7 x 7 
+  Result: 75026.800000 - PASS 
+Testing Serial - Matrix: 512 x 512, Kernel: 9 x 9 
+  Result: 95689.200000 - PASS 
+Testing Serial - Matrix: 1024 x 1024, Kernel: 3 x 3 
+  Result: 50969.400000 - PASS 
+Testing Serial - Matrix: 1024 x 1024, Kernel: 5 x 5 
+  Result: 119381.900000 - PASS 
+Testing Serial - Matrix: 1024 x 1024, Kernel: 7 x 7 
+  Result: 301449.000000 - PASS 
+Testing Serial - Matrix: 1024 x 1024, Kernel: 9 x 9 
+  Result: 358554.700000 - PASS 
+Testing Serial - Matrix: 2048 x 2048, Kernel: 3 x 3 
+  Result: 235275.900000 - PASS 
+Testing Serial - Matrix: 2048 x 2048, Kernel: 5 x 5 
+  Result: 529756.100000 - PASS 
+Testing Serial - Matrix: 2048 x 2048, Kernel: 7 x 7 
+  Result: 899364.100000 - PASS 
+Testing Serial - Matrix: 2048 x 2048, Kernel: 9 x 9 
+  Result: 1455349.800000 - PASS 
+Testing Serial - Matrix: 4096 x 4096, Kernel: 3 x 3 
+  Result: 754668.200000 - PASS 
+Testing Serial - Matrix: 4096 x 4096, Kernel: 5 x 5 
+  Result: 2019950.100000 - PASS 
+Testing Serial - Matrix: 4096 x 4096, Kernel: 7 x 7 
+  Result: 4174755.500000 - PASS 
+Testing Serial - Matrix: 4096 x 4096, Kernel: 9 x 9 
+  Result: 6507727.700000 - PASS 
+ 
+OPENMP PERFORMANCE RESULTS 
+=========================== 
+ 
+Testing OpenMP with 1 threads 
+  [1 threads] Matrix: 256 x 256, Kernel: 3 x 3 
+    Result: 2850.90 - PASS 
+  [1 threads] Matrix: 256 x 256, Kernel: 5 x 5 
+    Result: 16366.30 - PASS 
+  [1 threads] Matrix: 256 x 256, Kernel: 7 x 7 
+    Result: 27890.30 - PASS 
+  [1 threads] Matrix: 256 x 256, Kernel: 9 x 9 
+    Result: 23136.30 - PASS 
+  [1 threads] Matrix: 512 x 512, Kernel: 3 x 3 
+    Result: 19776.20 - PASS 
+  [1 threads] Matrix: 512 x 512, Kernel: 5 x 5 
+    Result: 54853.90 - PASS 
+  [1 threads] Matrix: 512 x 512, Kernel: 7 x 7 
+    Result: 77168.00 - PASS 
+  [1 threads] Matrix: 512 x 512, Kernel: 9 x 9 
+    Result: 122188.60 - PASS 
+  [1 threads] Matrix: 1024 x 1024, Kernel: 3 x 3 
+    Result: 73433.00 - PASS 
+  [1 threads] Matrix: 1024 x 1024, Kernel: 5 x 5 
+    Result: 127734.30 - PASS 
+  [1 threads] Matrix: 1024 x 1024, Kernel: 7 x 7 
+    Result: 228566.10 - PASS 
+  [1 threads] Matrix: 1024 x 1024, Kernel: 9 x 9 
+    Result: 415904.10 - PASS 
+  [1 threads] Matrix: 2048 x 2048, Kernel: 3 x 3 
+    Result: 179976.50 - PASS 
+  [1 threads] Matrix: 2048 x 2048, Kernel: 5 x 5 
+    Result: 530504.40 - PASS 
+  [1 threads] Matrix: 2048 x 2048, Kernel: 7 x 7 
+    Result: 909885.60 - PASS 
+  [1 threads] Matrix: 2048 x 2048, Kernel: 9 x 9 
+    Result: 1540033.00 - PASS 
+  [1 threads] Matrix: 4096 x 4096, Kernel: 3 x 3 
+    Result: 898038.00 - PASS 
+  [1 threads] Matrix: 4096 x 4096, Kernel: 5 x 5 
+    Result: 2222423.20 - PASS 
+  [1 threads] Matrix: 4096 x 4096, Kernel: 7 x 7 
+    Result: 13604068.30 - PASS 
+  [1 threads] Matrix: 4096 x 4096, Kernel: 9 x 9 
+    Result: 6483472.00 - PASS 
+ 
+Testing OpenMP with 2 threads 
+  [2 threads] Matrix: 256 x 256, Kernel: 3 x 3 
+    Result: 1754.00 - PASS 
+  [2 threads] Matrix: 256 x 256, Kernel: 5 x 5 
+    Result: 3363.40 - PASS 
+  [2 threads] Matrix: 256 x 256, Kernel: 7 x 7 
+    Result: 6386.90 - PASS 
+  [2 threads] Matrix: 256 x 256, Kernel: 9 x 9 
+    Result: 10669.30 - PASS 
+  [2 threads] Matrix: 512 x 512, Kernel: 3 x 3 
+    Result: 5922.30 - PASS 
+  [2 threads] Matrix: 512 x 512, Kernel: 5 x 5 
+    Result: 11740.90 - PASS 
+  [2 threads] Matrix: 512 x 512, Kernel: 7 x 7 
+    Result: 24648.50 - PASS 
+  [2 threads] Matrix: 512 x 512, Kernel: 9 x 9 
+    Result: 48451.10 - PASS 
+  [2 threads] Matrix: 1024 x 1024, Kernel: 3 x 3 
+    Result: 19503.00 - PASS 
+  [2 threads] Matrix: 1024 x 1024, Kernel: 5 x 5 
+    Result: 47000.30 - PASS 
+  [2 threads] Matrix: 1024 x 1024, Kernel: 7 x 7 
+    Result: 111311.90 - PASS 
+  [2 threads] Matrix: 1024 x 1024, Kernel: 9 x 9 
+    Result: 163820.00 - PASS 
+  [2 threads] Matrix: 2048 x 2048, Kernel: 3 x 3 
+    Result: 101884.20 - PASS 
+  [2 threads] Matrix: 2048 x 2048, Kernel: 5 x 5 
+    Result: 226863.70 - PASS 
+  [2 threads] Matrix: 2048 x 2048, Kernel: 7 x 7 
+    Result: 359567.80 - PASS 
+  [2 threads] Matrix: 2048 x 2048, Kernel: 9 x 9 
+    Result: 688144.50 - PASS 
+  [2 threads] Matrix: 4096 x 4096, Kernel: 3 x 3 
+    Result: 324184.80 - PASS 
+  [2 threads] Matrix: 4096 x 4096, Kernel: 5 x 5 
+    Result: 815993.90 - PASS 
+  [2 threads] Matrix: 4096 x 4096, Kernel: 7 x 7 
+    Result: 1550334.20 - PASS 
+  [2 threads] Matrix: 4096 x 4096, Kernel: 9 x 9 
+    Result: 2689224.10 - PASS 
+ 
+Testing OpenMP with 4 threads 
+  [4 threads] Matrix: 256 x 256, Kernel: 3 x 3 
+    Result: 1488.20 - PASS 
+  [4 threads] Matrix: 256 x 256, Kernel: 5 x 5 
+    Result: 3160.30 - PASS 
+  [4 threads] Matrix: 256 x 256, Kernel: 7 x 7 
+    Result: 5971.20 - PASS 
+  [4 threads] Matrix: 256 x 256, Kernel: 9 x 9 
+    Result: 10123.00 - PASS 
+  [4 threads] Matrix: 512 x 512, Kernel: 3 x 3 
+    Result: 4271.00 - PASS 
+  [4 threads] Matrix: 512 x 512, Kernel: 5 x 5 
+    Result: 11896.50 - PASS 
+  [4 threads] Matrix: 512 x 512, Kernel: 7 x 7 
+    Result: 21925.90 - PASS 
+  [4 threads] Matrix: 512 x 512, Kernel: 9 x 9 
+    Result: 35483.80 - PASS 
+  [4 threads] Matrix: 1024 x 1024, Kernel: 3 x 3 
+    Result: 20212.50 - PASS 
+  [4 threads] Matrix: 1024 x 1024, Kernel: 5 x 5 
+    Result: 37943.60 - PASS 
+  [4 threads] Matrix: 1024 x 1024, Kernel: 7 x 7 
+    Result: 70617.40 - PASS 
+  [4 threads] Matrix: 1024 x 1024, Kernel: 9 x 9 
+    Result: 135515.10 - PASS 
+  [4 threads] Matrix: 2048 x 2048, Kernel: 3 x 3 
+    Result: 56404.50 - PASS 
+  [4 threads] Matrix: 2048 x 2048, Kernel: 5 x 5 
+    Result: 137414.60 - PASS 
+  [4 threads] Matrix: 2048 x 2048, Kernel: 7 x 7 
+    Result: 259374.80 - PASS 
+  [4 threads] Matrix: 2048 x 2048, Kernel: 9 x 9 
+    Result: 468321.30 - PASS 
+  [4 threads] Matrix: 4096 x 4096, Kernel: 3 x 3 
+    Result: 283267.40 - PASS 
+  [4 threads] Matrix: 4096 x 4096, Kernel: 5 x 5 
+    Result: 555417.30 - PASS 
+  [4 threads] Matrix: 4096 x 4096, Kernel: 7 x 7 
+    Result: 1120383.60 - PASS 
+  [4 threads] Matrix: 4096 x 4096, Kernel: 9 x 9 
+    Result: 2657317.60 - PASS 
+ 
+Testing OpenMP with 8 threads 
+  [8 threads] Matrix: 256 x 256, Kernel: 3 x 3 
+    Result: 1857.80 - PASS 
+  [8 threads] Matrix: 256 x 256, Kernel: 5 x 5 
+    Result: 5567.60 - PASS 
+  [8 threads] Matrix: 256 x 256, Kernel: 7 x 7 
+    Result: 9951.20 - PASS 
+  [8 threads] Matrix: 256 x 256, Kernel: 9 x 9 
+    Result: 12966.50 - PASS 
+  [8 threads] Matrix: 512 x 512, Kernel: 3 x 3 
+    Result: 3532.40 - PASS 
+  [8 threads] Matrix: 512 x 512, Kernel: 5 x 5 
+    Result: 11611.00 - PASS 
+  [8 threads] Matrix: 512 x 512, Kernel: 7 x 7 
+    Result: 20097.60 - PASS 
+  [8 threads] Matrix: 512 x 512, Kernel: 9 x 9 
+    Result: 32321.30 - PASS 
+  [8 threads] Matrix: 1024 x 1024, Kernel: 3 x 3 
+    Result: 11387.10 - PASS 
+  [8 threads] Matrix: 1024 x 1024, Kernel: 5 x 5 
+    Result: 30569.70 - PASS 
+  [8 threads] Matrix: 1024 x 1024, Kernel: 7 x 7 
+    Result: 58960.40 - PASS 
+  [8 threads] Matrix: 1024 x 1024, Kernel: 9 x 9 
+    Result: 114293.60 - PASS 
+  [8 threads] Matrix: 2048 x 2048, Kernel: 3 x 3 
+    Result: 44822.60 - PASS 
+  [8 threads] Matrix: 2048 x 2048, Kernel: 5 x 5 
+    Result: 136927.30 - PASS 
+  [8 threads] Matrix: 2048 x 2048, Kernel: 7 x 7 
+    Result: 299580.40 - PASS 
+  [8 threads] Matrix: 2048 x 2048, Kernel: 9 x 9 
+    Result: 387744.00 - PASS 
+  [8 threads] Matrix: 4096 x 4096, Kernel: 3 x 3 
+    Result: 178526.50 - PASS 
+  [8 threads] Matrix: 4096 x 4096, Kernel: 5 x 5 
+    Result: 493036.20 - PASS 
+  [8 threads] Matrix: 4096 x 4096, Kernel: 7 x 7 
+    Result: 1084037.90 - PASS 
+  [8 threads] Matrix: 4096 x 4096, Kernel: 9 x 9 
+    Result: 1497548.50 - PASS 
+ 
+Testing OpenMP with 16 threads 
+  [16 threads] Matrix: 256 x 256, Kernel: 3 x 3 
+    Result: 1869.30 - PASS 
+  [16 threads] Matrix: 256 x 256, Kernel: 5 x 5 
+    Result: 3426.80 - PASS 
+  [16 threads] Matrix: 256 x 256, Kernel: 7 x 7 
+    Result: 6723.10 - PASS 
+  [16 threads] Matrix: 256 x 256, Kernel: 9 x 9 
+    Result: 9163.80 - PASS 
+  [16 threads] Matrix: 512 x 512, Kernel: 3 x 3 
+    Result: 8654.30 - PASS 
+  [16 threads] Matrix: 512 x 512, Kernel: 5 x 5 
+    Result: 9052.40 - PASS 
+  [16 threads] Matrix: 512 x 512, Kernel: 7 x 7 
+    Result: 36821.10 - PASS 
+  [16 threads] Matrix: 512 x 512, Kernel: 9 x 9 
+    Result: 29532.10 - PASS 
+  [16 threads] Matrix: 1024 x 1024, Kernel: 3 x 3 
+    Result: 14384.90 - PASS 
+  [16 threads] Matrix: 1024 x 1024, Kernel: 5 x 5 
+    Result: 29439.60 - PASS 
+  [16 threads] Matrix: 1024 x 1024, Kernel: 7 x 7 
+    Result: 58513.20 - PASS 
+  [16 threads] Matrix: 1024 x 1024, Kernel: 9 x 9 
+    Result: 92050.10 - PASS 
+  [16 threads] Matrix: 2048 x 2048, Kernel: 3 x 3 
+    Result: 44830.90 - PASS 
+  [16 threads] Matrix: 2048 x 2048, Kernel: 5 x 5 
+    Result: 106980.00 - PASS 
+  [16 threads] Matrix: 2048 x 2048, Kernel: 7 x 7 
+    Result: 227019.80 - PASS 
+  [16 threads] Matrix: 2048 x 2048, Kernel: 9 x 9 
+    Result: 362469.80 - PASS 
+  [16 threads] Matrix: 4096 x 4096, Kernel: 3 x 3 
+    Result: 183828.30 - PASS 
+  [16 threads] Matrix: 4096 x 4096, Kernel: 5 x 5 
+    Result: 498713.70 - PASS 
+  [16 threads] Matrix: 4096 x 4096, Kernel: 7 x 7 
+    Result: 845780.50 - PASS 
+  [16 threads] Matrix: 4096 x 4096, Kernel: 9 x 9 
+    Result: 1571671.20 - PASS 
+ 
+Testing OpenMP with 32 threads 
+  [32 threads] Matrix: 256 x 256, Kernel: 3 x 3 
+    Result: 2969.50 - PASS 
+  [32 threads] Matrix: 256 x 256, Kernel: 5 x 5 
+    Result: 6215.20 - PASS 
+  [32 threads] Matrix: 256 x 256, Kernel: 7 x 7 
+    Result: 10116.30 - PASS 
+  [32 threads] Matrix: 256 x 256, Kernel: 9 x 9 
+    Result: 6986.00 - PASS 
+  [32 threads] Matrix: 512 x 512, Kernel: 3 x 3 
+    Result: 7373.50 - PASS 
+  [32 threads] Matrix: 512 x 512, Kernel: 5 x 5 
+    Result: 11656.40 - PASS 
+  [32 threads] Matrix: 512 x 512, Kernel: 7 x 7 
+    Result: 23253.50 - PASS 
+  [32 threads] Matrix: 512 x 512, Kernel: 9 x 9 
+    Result: 24493.80 - PASS 
+  [32 threads] Matrix: 1024 x 1024, Kernel: 3 x 3 
+    Result: 14357.00 - PASS 
+  [32 threads] Matrix: 1024 x 1024, Kernel: 5 x 5 
+    Result: 33929.00 - PASS 
+  [32 threads] Matrix: 1024 x 1024, Kernel: 7 x 7 
+    Result: 62883.20 - PASS 
+  [32 threads] Matrix: 1024 x 1024, Kernel: 9 x 9 
+    Result: 93578.50 - PASS 
+  [32 threads] Matrix: 2048 x 2048, Kernel: 3 x 3 
+    Result: 52800.00 - PASS 
+  [32 threads] Matrix: 2048 x 2048, Kernel: 5 x 5 
+    Result: 112158.00 - PASS 
+  [32 threads] Matrix: 2048 x 2048, Kernel: 7 x 7 
+    Result: 211787.00 - PASS 
+  [32 threads] Matrix: 2048 x 2048, Kernel: 9 x 9 
+    Result: 355177.70 - PASS 
+  [32 threads] Matrix: 4096 x 4096, Kernel: 3 x 3 
+    Result: 175821.40 - PASS 
+  [32 threads] Matrix: 4096 x 4096, Kernel: 5 x 5 
+    Result: 503866.60 - PASS 
+  [32 threads] Matrix: 4096 x 4096, Kernel: 7 x 7 
+    Result: 1010073.90 - PASS 
+  [32 threads] Matrix: 4096 x 4096, Kernel: 9 x 9 
+    Result: 1435247.30 - PASS 
+ 
+TEST COMPLETION SUMMARY 
+======================= 
+Test completed: 2025-09-22 15:10:03 
