@@ -1,0 +1,5 @@
+conj-transpose
+conj-transpose-comparison
+conj-transpose-shmem
+conj-transpose-shmem-bc-avoid
+*.o
