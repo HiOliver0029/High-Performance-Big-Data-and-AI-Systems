@@ -36,6 +36,8 @@ This repository contains the coursework and assignments for the "High Performanc
 
 ### [Midterm: Deep Research Agent for Large Systems](HPC-Midterm%20Deep%20Research%20Agent%20for%20Large%20Systems.pdf)
 **Topic:** Deep Research Agent for Large Systems
+*   **Description:** This report investigates the design and implementation of a Deep Research Agent tailored for large-scale systems. It explores how autonomous agents can be leveraged to analyze, monitor, or optimize complex system architectures.
 
 ### [Final: Optimizing Distributed Large Model Inference](HPC_Final_Optimizing%20Distributed%20Large%20Model%20Inference.pdf)
 **Topic:** Optimizing Distributed Large Model Inference
+*   **Description:** This project focuses on optimizing the inference process of Large Language Models (LLMs) in a distributed environment. It analyzes performance bottlenecks and explores techniques such as parallelism strategies to enhance throughput and reduce latency.
